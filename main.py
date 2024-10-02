@@ -1,6 +1,8 @@
 from monitoring import get_cpu_usage, get_ram_usage, get_disk_usage
 from set_alarms import cpu_alarm, ram_alarm, hdd_alarm
 
+
+starta_overvakning = False
 # Main menu Options
 def main_menu():
     print("1. Start monitoring")
@@ -12,15 +14,21 @@ def main_menu():
 
 # Menyval 1
 def start_monitoring():
+    global starta_overvakning
+    starta_overvakning = True
     print("Starting monitoring..")
 
 # Menyval 2
 def current_monitoring():
-    get_cpu_usage()
-    get_ram_usage()
-    get_disk_usage()
-    input("Press any key to return to main menu...")
-    main_menu_loop()
+    if starta_overvakning is True:
+        get_cpu_usage()
+        get_ram_usage()
+        get_disk_usage()
+        input("Press any key to return to main menu...")
+        main_menu_loop()
+    else:
+        input("Start the monitoring to see current usages, press any key to continue..")
+        main_menu_loop()
 
 
 # Menyval 3
