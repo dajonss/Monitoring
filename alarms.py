@@ -3,6 +3,8 @@ cpu_alarm_set = []
 ram_alarm_set = []
 hdd_alarm_set = []
 
+
+
 # Set CPU alarm and add to cpu_alarm_set list
 def cpu_alarm():
     input_str = input("Enter alarm level for CPU, 1-100%: ")
