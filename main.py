@@ -1,5 +1,6 @@
 from monitoring import get_cpu_usage, get_ram_usage, get_disk_usage
 from alarms import cpu_alarm, ram_alarm, hdd_alarm
+from alarms import cpu_alarm_set, ram_alarm_set, hdd_alarm_set
 
 
 starta_overvakning = False
@@ -55,7 +56,15 @@ def create_alarms():
 
 # Menyval 4
 def show_alarms():
-    print("Show alarms... ")
+    #print(f"CPU Alarm set to: {cpu_alarm_set}%")
+    for i in range(len(cpu_alarm_set)):
+        print(f"CPU Alarm set to: {cpu_alarm_set[i]}%")
+
+    for i in range(len(ram_alarm_set)):
+        print(f"RAM Alarm set to: {ram_alarm_set[i]}%")
+        
+    for i in range(len(hdd_alarm_set)):
+        print(f"HDD Alarm set to: {hdd_alarm_set[i]}%")
     
 # Menyval 5
 def start_monitoring_mode():

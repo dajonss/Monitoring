@@ -7,6 +7,7 @@ hdd_alarm_set = []
 
 # Set CPU alarm and add to cpu_alarm_set list
 def cpu_alarm():
+    print(cpu_alarm_set)
     input_str = input("Enter alarm level for CPU, 1-100%: ")
     if input_str.isdigit():
         user_input = int(input_str)
@@ -20,7 +21,6 @@ def cpu_alarm():
 
 # Set RAM alarm and add to ram_alarm_set list
 def ram_alarm():
-    print(cpu_alarm_set)
     input_str = input("Enter alarm level for RAM, 1-100%: ")
     if input_str.isdigit():
         user_input = int(input_str)
