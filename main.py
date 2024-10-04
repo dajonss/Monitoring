@@ -1,7 +1,5 @@
 from monitoring import get_cpu_usage, get_ram_usage, get_disk_usage
 from alarms import cpu_alarm, ram_alarm, hdd_alarm, show_alarms
-from alarms import cpu_alarm_set, ram_alarm_set, hdd_alarm_set
-
 
 starta_overvakning = False
 # Main menu Options

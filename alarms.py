@@ -12,9 +12,9 @@ def cpu_alarm():
             cpu_alarm_set.append(user_input)
             print(f"CPU Alarm set to: {user_input}%")
         else:
-            print("ERROR!\nPlease enter a valid integer and try again.")
+            print("ERROR!\nPlease enter a valid integer between 1-100 and try again.")
     else:
-        print("ERROR!\nPlease enter a valid integer and try again.")
+        print("ERROR!\nPlease enter a valid integer between 1-100 and try again.")
 
 # Set RAM alarm and add to ram_alarm_set list
 def ram_alarm():
@@ -25,9 +25,9 @@ def ram_alarm():
             ram_alarm_set.append(user_input)
             print(f"RAM Alarm set to: {user_input}%")
         else:
-            print("ERROR!\nPlease enter a valid integer and try again.")
+            print("ERROR!\nPlease enter a valid integer between 1-100 and try again.")
     else:
-        print("ERROR!\nPlease enter a valid integer and try again.")
+        print("ERROR!\nPlease enter a valid integer between 1-100 and try again.")
 
 # Set HDD alarm and add to ram_alarm_set list
 def hdd_alarm():
@@ -38,9 +38,9 @@ def hdd_alarm():
             hdd_alarm_set.append(user_input)
             print(f"HDD Alarm set to: {user_input}%")
         else:
-            print("ERROR!\nPlease enter a valid integer and try again.")
+            print("ERROR!\nPlease enter a valid integer between 1-100 and try again.")
     else:
-        print("ERROR!\nPlease enter a valid integer and try again.")
+        print("ERROR!\nPlease enter a valid integer between 1-100 and try again.")
 
 
 def show_alarms():
